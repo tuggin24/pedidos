@@ -1,0 +1,130 @@
+.nav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.nav-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //justify-content: space-between;
+  //padding: 0.5em;
+  height: 60px;
+  background-color: #2f4858;
+}
+
+.nav-secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 39px;
+  background-color: #006476;
+}
+
+.actions-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-left {
+  display: flex;
+  float: none;
+  width: auto;
+}
+
+.nav-fill {
+  display: flex;
+  float: none;
+  width: auto;
+  flex: 1 1 auto;
+}
+
+.nav-right {
+  display: flex;
+  float: none;
+  width: auto;
+}
+
+
+.img-logo {
+  width: auto;
+  height: 40px;
+}
+
+.nav-search {
+  display: flex;
+  float: none;
+  width: auto;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.search-input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+  padding: 0.5em;
+  outline: none;
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(255, 227, 227);
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  font-size: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.btn-cart {
+  @extend .btn;
+  display: flex;
+  position: relative;
+}
+
+.number-cart {
+  position: absolute;
+  top: 5px;
+  right: auto;
+  left: 22px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+.number-receipt {
+  @extend .number-cart;
+  top: 6px !important;
+  left: 13px !important;
+}
