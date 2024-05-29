@@ -8,13 +8,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
+import { ProductComponent } from './components/products/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DashboardComponent,
-    LayoutComponent
+    LayoutComponent,
+    ProductsListComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

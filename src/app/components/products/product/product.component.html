@@ -1,0 +1,8 @@
+<div class="card">
+    <img class="product-image" src="https://picsum.photos/200/300" alt="Product Image">
+    <h2 class="product-name">{{ product.nombre }}</h2>
+    <p class="product-lab">{{ product.laboratorio }}</p>
+    <p class="product-price">{{ product.precio | currency }}</p>
+    <p class="product-discounted-price">{{ product.precio_descuento | currency }}</p>
+    <button class="add-to-cart-button">Add to Cart</button>
+</div>
