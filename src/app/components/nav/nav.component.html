@@ -1,41 +1,15 @@
 <div class="nav">
   <div class="nav-primary">
     <div class="nav-left">
-      <img
-        class="img-logo"
-        alt="unidrogas"
-        src="../../../assets/images/Unidrogas_sin_fondo.png"
-      />
+      <app-logo></app-logo>
     </div>
 
     <div class="nav-fill">
-      <div class="nav-search">
-        <input class="search-input" placeholder="Buscar" type="search" />
-        <button class="btn-search">
-          <mat-icon>search</mat-icon>
-        </button>
-      </div>
+      <app-search-products></app-search-products>
     </div>
 
     <div class="nav-right">
-      
-      <div class="actions-buttons">
-        <label>Hola, Agustin</label>
-        <button class="btn">
-          <mat-icon class="icon" fontSet="material-icons-outlined">account_balance_wallet</mat-icon>
-        </button>
-        <button class="btn">
-          <span class="number-receipt">0</span>
-          <img alt="recibos" src="../../../assets/images/receipt-svgrepo-com.svg">
-        </button>
-        <!-- <button class="btn">
-          <mat-icon class="icon" fontSet="material-icons-outlined">release_alert</mat-icon>
-        </button> -->
-        <button class="btn">
-          <span class="number-cart">0</span>
-          <img alt="carrito" src="../../../assets/images/cart-svgrepo-com.svg">
-        </button>
-      </div>
+      <app-actions-buttons></app-actions-buttons>
     </div>
   </div>
 
@@ -48,12 +22,6 @@
 
     <div class="nav-fill">
       <div class="actions-buttons">
-        <mat-chip-listbox aria-label="Fish selection">
-          <mat-chip-option>One fish</mat-chip-option>
-          <mat-chip-option>Two fish</mat-chip-option>
-          <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
-          <mat-chip-option color="warn">Warn fish</mat-chip-option>
-        </mat-chip-listbox>
       </div>
     </div>
 

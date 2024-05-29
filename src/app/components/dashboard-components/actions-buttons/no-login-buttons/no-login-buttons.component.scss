@@ -1,0 +1,67 @@
+.container-user {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-labels-sesion {
+  display: flex;
+}
+
+.label {
+  font-size: small;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.label-sesion {
+  @extend .label;
+  color: rgb(0, 255, 42);
+}
+
+.label-sesion:hover {
+  animation: buttonScale 1s forwards;
+  text-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.label-register {
+  @extend .label;
+  color: rgb(0, 132, 255);
+}
+
+.label-register:hover {
+  animation: buttonScale 1s forwards;
+  text-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.label-bienvenido {
+  @extend .label;
+  font-weight: 300;
+  cursor: default;
+  color: unset;
+}
+
+.label-separador {
+  @extend .label;
+  white-space: pre;
+  cursor: default;
+  color: unset;
+}
+
+@keyframes buttonScale {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.02);
+
+  }
+  100%{
+    transform: scale(1);
+  }
+}
